@@ -1,0 +1,17 @@
+* 12/4/2007
+
+* Works with rails 2.0 (8166) and Mephisto edge (3060)
+
+* 6/21/2007 *
+
+* Added handler to catch all fields of the drop source.  Instead of having to do article['title'], you can use article.title
+
+* better error logging
+
+* messages/flash type message work in forms
+
+* 6/23/2007 *
+
+* added 'liquid_block' to render a block of liquid code
+Example: <%= liquid_block("<ul>{% tagcloud as tag, class %} <li class=\"{{ class }} \"> {{ tag | link_to_tag }} </li> {% endtagcloud %}</ul>") %>
+This example requires the tagcloud plugin from  http://svn.boldr.net/mephisto/plugins/trunk/mephisto_tag_cloud/
